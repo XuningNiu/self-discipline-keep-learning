@@ -1,3 +1,6 @@
+********
+AMAZON挂掉面试题
+********
 //https://leetcode.com/problems/length-of-the-longest-valid-substring/
 // You are given a string word and an array of strings forbidden.
 
@@ -21,6 +24,14 @@
 // Output: 4
 // Explanation: There are 11 valid substrings in word: "l", "t", "c", "o", "d", "tc", "co", "od", "tco", "cod", and "tcod". The length of the longest valid substring is 4.
 // It can be shown that all other substrings contain either "de", "le", or "e" as a substring. 
+
+// Constraints:
+
+// 1 <= word.length <= 105
+// word consists only of lowercase English letters.
+// 1 <= forbidden.length <= 105
+// 1 <= forbidden[i].length <= 10
+// forbidden[i] consists only of lowercase English letters.
 
 // 方法一：
 // sliding window，需要两层遍历，外层和内层遍历的方向需要相反。
@@ -79,3 +90,4 @@ public:
         return ret;
     }
 };
+// 方法二：字典树
